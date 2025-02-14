@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>This is some text.</p>
+  </div>
+
+  <script>
+    // Incorrect way to access element using innerHTML without checking for null
+    document.getElementById('myDiv').innerHTML = document.getElementById('myDiv').innerHTML + "<p>Added text</p>";
+  </script>
+</body>
+</html>
